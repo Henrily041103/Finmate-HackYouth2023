@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
+import router from './controller/router'
+import { RouterProvider } from 'react-router-dom'
+
 import './App.css'
 
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <p>finmate</p>
+      <RouterProvider router={router}/>
   )
 }
 
