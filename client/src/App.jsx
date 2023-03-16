@@ -1,6 +1,5 @@
 
-import router from './controller/router'
-import { RouterProvider } from 'react-router-dom'
+
 
 import './App.css'
 
@@ -8,7 +7,7 @@ import './App.css'
 function App() {
 
   return (
-      <RouterProvider router={router}/>
+    <p>Finmate</p>
   )
 }
 
