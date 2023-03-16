@@ -7,15 +7,15 @@ const router = createBrowserRouter([
         element: <App/>
     },
     {
-        path:'/login',
+        path:'login',
+        element: <div>Login</div>
+    },
+    {
+        path:'register',
         element: null
     },
     {
-        path:'/register',
-        element: null
-    },
-    {
-        path:'/user',
+        path:'user',
         element: null,
         children: [
             {
@@ -27,13 +27,14 @@ const router = createBrowserRouter([
                 element: null,
             },
             {
-                path:'/signup',
+                path:'user/signup',
                 element: null
             },
         ]
     },
+    
     {
-        path:'/investor',
+        path:'investor',
         element: null,
         children: [
             {
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
                 element: null,
             },
             {
-                path:'/search',
+                path:'investor/search',
                 element: null
             },
         ]
